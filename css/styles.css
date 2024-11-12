@@ -274,7 +274,9 @@ input {
     .mobile-menu-nav-link:hover,
     .mobile-menu-nav-link:focus,
     .mobile-menu-contacts-link:hover,
-    .mobile-menu-contacts-link:focus {
+    .mobile-menu-contacts-link:focus,
+    .mobile-menu-nav-link.current,
+    .mobile-menu-contacts-link.current {
          color: #404bbf;
     }
     .mobile-menu-contacts { 
@@ -364,7 +366,7 @@ input {
     background-repeat: no-repeat;
     background-position: center;    
     margin: 0 auto;
-    width: 100%;
+    max-width: 320px;
 }
 
 .hero-button {
@@ -412,6 +414,7 @@ input {
     }
 
     .hero {
+        max-width: 768px;
         padding: 112px 0;                
         background-image: linear-gradient(
             rgba(46, 47, 66, 0.7),
@@ -436,6 +439,7 @@ input {
         margin-bottom: 48px;        
     }
     .hero {
+        max-width: 1158px;
          padding: 188px 0;        
         background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -705,7 +709,7 @@ background-color: #404bbf;;
         color: #434455;        
     }
 .portfolio-cover-text {
-        visibility: hidden;
+        display: none;
     }
 
 @media screen and (min-width: 768px) {
@@ -751,7 +755,7 @@ background-color: #404bbf;;
     
      }
  .portfolio-cover-text {
-    visibility: visible;
+    display: block;
     position: absolute;
     background-color: #4d5ae5;
     font-size: 16px;
@@ -897,9 +901,7 @@ text-align: start;
     fill: #FFFFFF;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-icon {
-    margin-left: 16px;
-}
+
 .footer-input:focus {
     border-color:#31D0AA;
     }
